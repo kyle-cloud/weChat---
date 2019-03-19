@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+        http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<welcome-file-list>
+		<welcome-file>login.html</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<display-name>UploadHandleServlet2</display-name>
+		<servlet-name>UploadHandleServlet2</servlet-name>
+		<servlet-class>homedisk.action.user.UploadHandleServlet2</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UploadHandleServlet2</servlet-name>
+		<url-pattern>/homedisk/UploadHandleServlet2</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<display-name>DownloadServlet</display-name>
+		<servlet-name>DownloadServlet</servlet-name>
+		<servlet-class>homedisk.action.user.DownloadServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DownloadServlet</servlet-name>
+		<url-pattern>/homedisk/DownloadServlet</url-pattern>
+	</servlet-mapping>
+</web-app>
