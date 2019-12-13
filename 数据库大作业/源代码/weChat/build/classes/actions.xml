@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<platform>
+	<cache>
+		<action name="user_action" enable="true" role="user">
+			<interface>weChat.action.user.IUseractions</interface>
+			<class>weChat.action.user.Useractions</class>
+			<method name="login" parameter="u01"></method>
+			<method name="sendMessage" parameter="u02"></method>
+			<method name="signup" parameter="u03"></method>
+			<method name="queryPeople" parameter="u04"></method>
+			<method name="sendRequest" parameter="u05"></method>
+			<method name="agreeRequest" parameter="u06"></method>
+			<page url="home.jsp"></page>
+		</action>
+		<action name="test_action" enable="true" role="user">
+			<interface>weChat.action.user.IUseractions</interface>
+			<class>weChat.action.user.Useractions</class>
+			<method name="update_user" parameter="t01"></method>
+			<method name="delete_user" parameter="t02"></method>
+			<method name="insert_user" parameter="t03"></method>
+			<page url="index.html"></page>
+		</action>
+	</cache>
+</platform>
